@@ -36,7 +36,7 @@ public class SupabaseInitiation : MonoBehaviour
         {
             AutoConnectRealtime = true
         };
-        supabase = new Supabase.Client("https://ibmzlysxftqqfosreljy.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlibXpseXN4ZnRxcWZvc3JlbGp5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTE4MDU0NjksImV4cCI6MjAyNzM4MTQ2OX0.OeXAAkPq_wGgDLlAtpORjIuBgUaXtNv5qaWw4_p_YUk", options);
+        supabase = new Supabase.Client("url", "key", options);
         initializeSupabase();
         Debug.Log("Supabase Initialized");
         fetchData();
